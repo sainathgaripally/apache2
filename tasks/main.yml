@@ -2,6 +2,8 @@
   apt:
     name: apache2
     state: latest
+  tags:
+    - Install my apache2
 
 - name: Install httpd. Some random task
   yum:

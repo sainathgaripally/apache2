@@ -21,17 +21,17 @@
 
 - name: Copy one.txt to sample dir in remote location
   copy:
-    src: /home/azureuser/one.txt
+    src: one.txt
     dest: /home/azureuser/sample/one.txt
 
 - name: Copy abc.html to /var/www/html/abc.html.
   template:
-    src: /home/azureuser/abc.html.j2
+    src: abc.html.j2
     dest: /var/www/html/abc.html
 
 - name: Copy conf file to some location
   copy:
-    src: /home/azureuser/dummyconf.txt
+    src: dummyconf.txt
     dest: /home/azureuser/dummyconf.txt
   notify:
     - Restart apache2
